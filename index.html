@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+
+</head>
+<body>
+
+<h3>Part 1</h3>
+<p>Click the button to see the result</p>
+<button onclick="func1()">Click Me!</button>
+
+<h3>Part 2</h3>
+<p id="inc"></p>
+
+<h3>Part 3</h3>
+<p id="out"></p>
+
+<h3>Part 5</h3>
+<p id="output"></p>
+   
+   <script>
+// # 1 :   Create two variables and alert their sum , multiplication , & divide  var1 by var2  and  see  if you get the desired output or not.
+var var1=5;
+var var2=6;
+var v1=var1+var2;
+var v2=var1*var2;
+var v3=var1/var2;
+
+function func1(){
+alert("The sum is " + v1);
+alert("The result of multiplication is " + v2);
+alert("The result of division is " + v3);
+}
+
+// # 2 :   Create a variable A and assign an integer value to it then increment the variable  and assign it to the new variable B.
+var A=4;
+A++;
+var B= A;
+func2();
+function func2(){
+document.getElementById("inc").innerHTML= "The incremented value is "+ B;
+}
+
+//  # 3 :Create a variable and assign  a string value  ‘Hello’ to it.  Take  the characters by using a  greater then (>) operator  to  check if the value of the left operand is greater than the right operator. If yes then it returns true else false
+ var str1="Hello";
+console.log(str1 > 5);
+
+func3();
+function func3(){
+document.getElementById("out").innerHTML= "The output is false";
+}
+
+//  # 4 :What Would be the results of the following statements below.?   Result must be in Boolean  . 
+// console.log(10 > "5")
+// TRUE
+
+// console.log(2 > true) 
+// True
+
+// console.log(1 > false) 
+// True
+
+// console.log(1 > "") 
+// True
+
+// console.log('' == '0' ) 
+// FALSE
+
+// console.log(1 > " ") 
+// FALSE
+
+// console.log(1 > null)
+// true
+
+// console.log(10 > "a") 
+// false
+
+// console.log(10 > NaN)
+// false
+
+// console.log(10 > undefined) 
+//  false
+
+// console.log(0 == '' )  
+//  true
+
+// console.log(a > 5 || b > 5) 
+// false
+
+// console.log(0 == '0') 
+// true
+
+//  # 5 :  What would be the output?
+let str="Hello"
+let num=100;
+console.log(str || num);
+
+func5();
+function func5(){ 
+document.getElementById("output").innerHTML="The output is "+ str || num;
+}
+    
+    </script>
+</body>
+</html>
